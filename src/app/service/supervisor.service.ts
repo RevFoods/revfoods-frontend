@@ -17,7 +17,7 @@ export class SupervisorService {
    }
 
    public addSupervisor(supervisor : Supervisor ) : Observable<Supervisor>{
-    return this.http.post< Supervisor>(this.url, supervisor);
+    return this.http.post<Supervisor>(this.url, supervisor);
   }
  
   public deleteSupervisor(supervisorId : number){
@@ -31,4 +31,9 @@ export class SupervisorService {
   public getAllSupervisors(): Observable<Supervisor[]>{
     return this.http.get<Supervisor[]>(this.url+"s")
   }
+  
+  public getSupervisorById(supervisorId : number): Observable<Supervisor>{
+    return this.http.get<Supervisor>(this.url + "/" + supervisorId)
+  }
+
 }

@@ -4,7 +4,7 @@ import { Order } from "./order";
 export class Supervisor {
 
     supervisorId : number;
-    order : Order[]=[];
+    orderList : Order[];
     help : Help;
 
 }
