@@ -30,7 +30,7 @@ export class CartService {
     return this.http.get<Cart>(this.url+"/"+ cartId);
   }
 
-  public deleteCustomer(cartId: number){
+  public deleteCart(cartId: number){
     return this.http.delete(this.url+"/"+cartId);
   }
 }
