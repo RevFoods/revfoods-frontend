@@ -18,7 +18,7 @@ export class OrderService {
     return this.http.post<Order>(this.url, order);
   }
   
-  public updateorder(order: Order): Observable<Order> {
+  public updateOrder(order: Order): Observable<Order> {
     return this.http.put<Order>(this.url, order);
   }
   
