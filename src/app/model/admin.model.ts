@@ -1,4 +1,3 @@
 export class Admin {
-    adminId : number;
-    
+  adminId: number;
 }

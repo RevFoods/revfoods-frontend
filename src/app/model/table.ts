@@ -1,5 +1,5 @@
 export class Table {
-    tableId : number;
-    tableNumber : number;
-    tableStatus : boolean;
+  tableId: number;
+  tableNumber: number;
+  tableStatus: boolean;
 }
