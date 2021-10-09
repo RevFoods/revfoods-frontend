@@ -1,11 +1,11 @@
 import { Cart } from "./cart";
-import { Table } from "./table";
+import { CustomerTable } from "./customer-table";
 
 export class Customer {
   customerId: number;
   customerName: string;
   customerUsername: string;
   customerPhone: number;
-  table: Table;
+  customerTable: CustomerTable;
   cartList: Cart[];
 }

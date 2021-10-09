@@ -6,7 +6,7 @@ import { CustomerTable } from "../model/customer-table";
 @Injectable({
   providedIn: "root",
 })
-export class CustomercustomerTableService {
+export class CustomerTableService {
   private url: string;
 
   constructor(private http: HttpClient) {
