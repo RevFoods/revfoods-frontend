@@ -1,10 +1,10 @@
-import { OrderStatus } from "./order-status";
 import { Cart } from "./cart";
 import { Chef } from "./chef";
+import { OrderStatus } from "./order-status";
 import { Supervisor } from "./supervisor";
 
-export class Order {
-  orderId: number;
+export class FoodOrder {
+  foodOrderId: number;
   orderStatus: OrderStatus;
   cart: Cart;
   chef: Chef;
