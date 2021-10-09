@@ -1,7 +1,7 @@
-import { Table } from './table';
+import { Table } from "./table";
 
-describe('Table', () => {
-  it('should create an instance', () => {
+describe("Table", () => {
+  it("should create an instance", () => {
     expect(new Table()).toBeTruthy();
   });
 });
