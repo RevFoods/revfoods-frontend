@@ -32,4 +32,21 @@ export class FoodOrderService {
   public getAllFoodOrders(): Observable<FoodOrder[]> {
     return this.http.get<FoodOrder[]>(this.url + "s");
   }
+
+  public addCartToFoodOrder(cartId: number): Observable<FoodOrder> {
+    return this.http.post<FoodOrder>(this.url + "/cart/", cartId);
+  }
+
+  public getFoodOrdersByCustomerId(customerId: number): Observable<FoodOrder[]> {
+    return this.http.get<FoodOrder[]>(this.url + "s/customer/" + customerId);
+  }
+
+  public updateFoodOrderStatus(foodOrderId: number,orderStatusId: number): Observable<FoodOrder> {
+    return this.http.put<FoodOrder>(this.url + "/" + foodOrderId +  "/orderStatus/", orderStatusId);
+  }
+
+  public getAllFoodOrdersByOrderStatusId(orderStatusId: number): Observable<FoodOrder[]> {
+    return this.http.get<FoodOrder[]>(this.url + "s/orderStatus/" + orderStatusId);
+  }
+
 }
