@@ -2,6 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Cart } from "../model/cart";
+import { FoodOrder } from "../model/food-order";
 
 @Injectable({
   providedIn: "root",
@@ -25,11 +26,19 @@ export class CartService {
     return this.http.get<Cart[]>(this.url + "s");
   }
 
-  public getCartById(cartId: number): Observable<Cart> {
+  public getCartByCartId(cartId: number): Observable<Cart> {
     return this.http.get<Cart>(this.url + "/" + cartId);
   }
 
   public deleteCart(cartId: number) {
     return this.http.delete(this.url + "/" + cartId);
+  }
+
+  public addFoodAndCustomerToCart(foodId: number,customerId: number,cartQuantity : number): Observable<Cart>{
+    return this.http.post<Cart>(this.url +"/customer/" +customerId + "/food/" +foodId +"/cartQuantity/"+cartQuantity,foodId);
+  }
+
+  public  getAllCartsByCustomerId(customerId:number): Observable<Cart[]>{
+    return this.http.get<Cart[]>(this.url +"/customer/"+customerId);
   }
 }
