@@ -1,16 +1,22 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { AppModule } from './app.module';
+import { FoodCategoryService } from './service/food-category.service';
+import { OrderStatusService } from './service/order-status.service';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        
       ],
       declarations: [
         AppComponent
       ],
+      schemas: [FoodCategoryService, OrderStatusService]
+
     }).compileComponents();
   }));
 
