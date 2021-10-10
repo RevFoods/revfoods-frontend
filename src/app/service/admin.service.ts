@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { Admin } from "../model/admin.model";
+import { Admin } from "../model/admin";
 import { Observable } from "rxjs";
 
 @Injectable({
