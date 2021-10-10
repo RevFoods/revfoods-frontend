@@ -31,4 +31,8 @@ export class ChefService {
   public getChefById(chefId: number): Observable<Chef> {
     return this.http.get<Chef>(this.url + "/" + chefId);
   }
+
+  public getChefByUsernameAndPassword(chef: Chef): Observable<Chef> {
+    return this.http.post<Chef>(this.url + "/login", chef);
+  }
 }
