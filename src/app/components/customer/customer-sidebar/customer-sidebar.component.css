@@ -1,0 +1,42 @@
+[class*="sidebar-dark-"] {
+  background-color: #ffffff;
+}
+
+[class*="sidebar-dark-"] .sidebar a {
+  color: #000611;
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active,
+.sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+  background-color: #f26f26;
+  color: #fff;
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item :hover,
+.sidebar-light-primary .nav-sidebar > .nav-item :hover {
+  background-color: #eeeeee;
+  color: #000611;
+}
+
+[class*="sidebar-dark"] .brand-link {
+  border-bottom: 1px solid #dee2e6;
+}
+
+[class*="sidebar-dark-"] .nav-header {
+  background-color: inherit;
+  color: #000611;
+}
+
+.nav-sidebar > .nav-item .nav-icon {
+  margin-right: 0.5rem;
+}
+
+[class*="sidebar-dark"] .brand-link,
+[class*="sidebar-dark"] .brand-link .pushmenu {
+  color: #000611;
+}
+
+.nav-sidebar .nav-item > .nav-link {
+  margin-bottom: 0.2rem;
+  border-bottom: 1px solid #dee2e6;
+}
