@@ -49,6 +49,7 @@ import { ManageFoodComponent } from './components/admin/manage-food/manage-food.
 import { AddFoodCategoryComponent } from './components/admin/add-food-category/add-food-category.component';
 import { UpdateFoodCategoryComponent } from './components/admin/update-food-category/update-food-category.component';
 import { ManageFoodCategoryComponent } from './components/admin/manage-food-category/manage-food-category.component';
+import { HomeComponent } from './home/home/home.component';
 
 @NgModule({
   declarations: [
@@ -88,6 +89,7 @@ import { ManageFoodCategoryComponent } from './components/admin/manage-food-cate
     AddFoodCategoryComponent,
     UpdateFoodCategoryComponent,
     ManageFoodCategoryComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [

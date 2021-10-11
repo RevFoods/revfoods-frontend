@@ -6,15 +6,21 @@
   color: #000611;
 }
 
-.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active,
-.sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+.sidebar-dark-primary .nav-sidebar > .nav-item.active > .nav-link,
+.sidebar-light-primary .nav-sidebar > .nav-item.active > .nav-link {
   background-color: #f26f26;
+  color: #fff;
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item.active :hover,
+.sidebar-light-primary .nav-sidebar > .nav-item.active :hover {
+  background-color: #de580d;
   color: #fff;
 }
 
 .sidebar-dark-primary .nav-sidebar > .nav-item :hover,
 .sidebar-light-primary .nav-sidebar > .nav-item :hover {
-  background-color: #eeeeee;
+  background-color: #dee2e6;
   color: #000611;
 }
 
