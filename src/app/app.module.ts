@@ -14,10 +14,12 @@ import { SupervisorService } from "./service/supervisor.service";
 import { CustomerService } from "./service/customer.service";
 import { CustomerTableService } from "./service/customer-table.service";
 import { CartService } from "./service/cart.service";
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule,HttpClientTestingModule],
   providers: [
     AdminService,
     FeedbackService,
