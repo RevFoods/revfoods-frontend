@@ -3,6 +3,8 @@ import { Help } from "./help";
 
 export class Supervisor {
   supervisorId: number;
+  supervisorUsername: string;
+  supervisorPassword: string;
   foodOrderList: FoodOrder[];
-  help: Help;
+  helpList: Help[];
 }
