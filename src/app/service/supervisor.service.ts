@@ -32,4 +32,9 @@ export class SupervisorService {
   public getSupervisorById(supervisorId: number): Observable<Supervisor> {
     return this.http.get<Supervisor>(this.url + "/" + supervisorId);
   }
+
+  public getSupervisorByUsernameAndPassword(supervisor: Supervisor) : Observable<Supervisor>{
+    return this.http.post<Supervisor>(this.url + "/login", supervisor)
+  }
+
 }

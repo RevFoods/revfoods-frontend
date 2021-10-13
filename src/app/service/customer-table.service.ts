@@ -13,29 +13,33 @@ export class CustomerTableService {
     this.url = "http://localhost:2020/customerTable";
   }
 
-  public addcustomerTable(
+  public addCustomerTable(
     customerTable: CustomerTable
   ): Observable<CustomerTable> {
     return this.http.post<CustomerTable>(this.url, customerTable);
   }
 
-  public deletecustomerTable(customerTableId: number) {
+  public deleteCustomerTable(customerTableId: number) {
     return this.http.delete(this.url + "/" + customerTableId);
   }
 
-  public updatecustomerTable(
+  public updateCustomerTable(
     customerTable: CustomerTable
   ): Observable<CustomerTable> {
     return this.http.put<CustomerTable>(this.url, customerTable);
   }
 
-  public getAllcustomerTables(): Observable<CustomerTable[]> {
+  public getAllCustomerTables(): Observable<CustomerTable[]> {
     return this.http.get<CustomerTable[]>(this.url + "s");
   }
 
-  public getcustomerTableById(
+  public getCustomerTableById(
     customerTableId: number
   ): Observable<CustomerTable> {
     return this.http.get<CustomerTable>(this.url + "/" + customerTableId);
+  }
+
+  public getAllCustomerTablesByCustomerTableStatus(customerTableStatus:boolean):Observable<CustomerTable[]>{
+    return this.http.get<CustomerTable[]>(this.url +"s"+ "/" + "customerTableStatus"+customerTableStatus)
   }
 }
