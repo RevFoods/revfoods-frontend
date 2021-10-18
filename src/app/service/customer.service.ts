@@ -12,7 +12,7 @@ export class CustomerService {
   private url: string;
 
   constructor(private http: HttpClient) {
-    this.url = "http://localhost:2020/customer";
+    this.url = "http://54.146.205.172:2020/customer";
   }
 
   public addCustomer(customer: Customer): Observable<Customer> {

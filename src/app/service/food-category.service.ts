@@ -10,7 +10,7 @@ export class FoodCategoryService {
   private url: string;
 
   constructor(private http: HttpClient) {
-    this.url = "http://localhost:2020/foodCategory";
+    this.url = "http://54.146.205.172:2020/foodCategory";
   }
 
   public addFoodCategory(foodCategory: FoodCategory): Observable<FoodCategory> {
@@ -33,7 +33,7 @@ export class FoodCategoryService {
 
   public getAllFoodCategories(): Observable<FoodCategory[]> {
     return this.http.get<FoodCategory[]>(
-      "http://localhost:2020/foodCategories"
+      "http://54.146.205.172:2020/foodCategories"
     );
   }
 }

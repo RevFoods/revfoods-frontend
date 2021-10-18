@@ -9,7 +9,7 @@ import { Chef } from "../model/chef";
 export class ChefService {
   private url: string;
   constructor(private http: HttpClient) {
-    this.url = "http://localhost:2020/chef";
+    this.url = "http://54.146.205.172:2020/chef";
   }
 
   public addChef(chef: Chef): Observable<Chef> {

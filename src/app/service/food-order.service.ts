@@ -10,7 +10,7 @@ export class FoodOrderService {
   url: string;
 
   constructor(private http: HttpClient) {
-    this.url = "http://localhost:2020/foodOrder";
+    this.url = "http://54.146.205.172:2020/foodOrder";
   }
 
   public addFoodOrder(foodOrder: FoodOrder): Observable<FoodOrder> {

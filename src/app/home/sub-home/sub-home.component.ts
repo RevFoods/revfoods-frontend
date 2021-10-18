@@ -10,8 +10,8 @@ import { FoodCategoryService } from "src/app/service/food-category.service";
   styleUrls: ["./sub-home.component.css"],
 })
 export class SubHomeComponent implements OnInit {
-  private foodCategoryList: FoodCategory[];
-  private isRegistered: string;
+  foodCategoryList: FoodCategory[];
+  isRegistered: string;
   constructor(
     private foodCategoryService: FoodCategoryService,
     private router: Router,

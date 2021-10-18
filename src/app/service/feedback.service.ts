@@ -10,7 +10,7 @@ export class FeedbackService {
   private url: string;
 
   constructor(private http: HttpClient) {
-    this.url = "http://localhost:2020/feedback";
+    this.url = "http://54.146.205.172:2020/feedback";
   }
 
   public addFeedback(feedback: Feedback): Observable<Feedback> {

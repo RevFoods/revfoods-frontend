@@ -10,7 +10,7 @@ import { ChefService } from "src/app/service/chef.service";
   styleUrls: ["./manage-chef.component.css"],
 })
 export class ManageChefComponent implements OnInit {
-  private chefs: Chef[];
+  chefs: Chef[];
   constructor(private chefService: ChefService, private router: Router, private toaster: ToastrService) {}
 
   ngOnInit() {

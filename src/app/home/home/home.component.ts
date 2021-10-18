@@ -9,8 +9,8 @@ import { FoodCategoryService } from "src/app/service/food-category.service";
   styleUrls: ["./home.component.css"],
 })
 export class HomeComponent implements OnInit {
-  private foodCategoryList: FoodCategory[];
-  private isRegistered: string;
+  foodCategoryList: FoodCategory[];
+  isRegistered: string;
   constructor(
     private foodCategoryService: FoodCategoryService,
     private router: Router,

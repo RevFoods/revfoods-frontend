@@ -11,7 +11,7 @@ export class HelpService {
   url: string;
 
   constructor(private http: HttpClient) {
-    this.url = "http://localhost:2020/help";
+    this.url = "http://54.146.205.172:2020/help";
   }
   public addHelp(help: Help): Observable<Help> {
     return this.http.post<Help>(this.url, help);

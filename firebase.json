@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/revfoods",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

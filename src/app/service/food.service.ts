@@ -9,7 +9,7 @@ import { Food } from "../model/food";
 export class FoodService {
   private url: string;
   constructor(private http: HttpClient) {
-    this.url = "http://localhost:2020/food";
+    this.url = "http://54.146.205.172:2020/food";
   }
 
   public addFood(food: Food): Observable<Food> {

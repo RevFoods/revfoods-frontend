@@ -61,8 +61,7 @@
                                                 (click)="serveOrder(foodOrder.foodOrderId)">Serve</button>
                                         </div>
                                         <div *ngIf="foodOrder.orderStatus.orderStatus==='Served'">
-                                            <button type="button" class="btn"
-                                                (click)="cancelOrder(foodOrder.foodOrderId)" disabled>Served</button>
+                                            <button type="button" class="btn" disabled>Served</button>
                                         </div>
                                         <div *ngIf="foodOrder.orderStatus.orderStatus==='Ordered'">
                                             <button type="button" class="btn"
