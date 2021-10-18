@@ -35,14 +35,8 @@ export class CustomerService {
     return this.http.delete(this.url + "/" + customerId);
   }
 
-  public addCustomerTableToCustomer(
-    customerTableId: number,
-    customerId: number
-  ): Observable<Customer> {
-    return this.http.put<Customer>(
-      this.url + "/" + customerId + "/customerTable/" + customerTableId,
-      customerTableId
-    );
+  public addCustomerTableToCustomer(customerId: number): Observable<Customer> {
+    return this.http.put<Customer>(this.url + "/" + customerId, customerId);
   }
 
   public getAllCustomersByOrderStatusId(

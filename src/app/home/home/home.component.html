@@ -1,1 +1,28 @@
-<p>home works!</p>
+<button class="btn" routerLink="/login"><i class="fas fa-chess-queen"></i></button>
+<div class="hero__section">
+    <div class="hero__text">
+        <h1 class="revFoods">RevFoods<span class="text-warning foods"></span></h1>
+        <p>sizzle it your way!</p>
+    </div>
+</div>
+
+<!-- style="min-height: 1604.8px;" -->
+<section class="content">
+    <div class="container-fluid">
+        <h2 class="rev-title">Inspiration for your first order</h2>
+        <div class="div-grid">
+            <div *ngFor="let foodCategory of foodCategoryList">
+                <div class="card" (click)="showFoodByCategory(foodCategory.foodCategoryId)">
+                    <img class="card-img-top" [src]="foodCategory.foodCategoryAvatar"
+                        [alt]="foodCategory.foodCategoryName">
+                    <div class="card-body">
+                        <h3 class="card-title">{{foodCategory.foodCategoryName}}</h3>
+                        <p class="card-text">{{foodCategory.foodCategoryDescription}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+​

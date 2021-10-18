@@ -1,1 +1,51 @@
-<p>help works!</p>
+<!--  Content Wrapper. Contains page content -->
+<div class="wrapper">
+    <div class="content-wrapper" style="min-height: 2168.88px;">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Help</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-md-12">
+                        <!-- general form elements -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Help form</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <form>
+                                <div class="card-body">
+                                    <div class="container">
+
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="comment">How Can We Help You?</label>
+                                                <textarea class="form-control" rows="5" id="comment" name="text"
+                                                    placeholder="Write your qurey" [(ngModel)]='help.help'></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <form>
+                                        <div class="card-footer">
+                                            <button type="submit" class="btn" (click)='addHelp()'>Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

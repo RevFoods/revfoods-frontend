@@ -1,0 +1,29 @@
+.bg-info,
+.bg-info > a {
+  color: #fff !important;
+}
+.bg-info {
+  background-color: #f15d1f !important;
+}
+
+.bg-success,
+.bg-success > a {
+  color: #f15d1f !important;
+}
+.bg-success {
+  background-color: #fff !important;
+}
+
+.bg-info[_ngcontent-gmh-c4] {
+  background-color: #fff !important;
+}
+
+.bg-info[_ngcontent-gmh-c4],
+.bg-info[_ngcontent-gmh-c4] > a[_ngcontent-gmh-c4] {
+  color: #f15d1f !important;
+}
+
+svg {
+  float: right;
+  width: 500px;
+}

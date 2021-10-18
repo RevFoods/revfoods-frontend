@@ -1,1 +1,59 @@
-<p>update-supervisor works!</p>
+<div class="wrapper">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 2077.69px;">
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-12">
+                        <h1>Update Supervisor</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-md-12">
+                        <!-- general form elements -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Update Supervisor Details</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <!-- form start -->
+                            <form [formGroup]="UpdateSupervisor" (ngSubmit)="onSubmit()">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="Id">Supervisor Id</label>
+                                        <input type="text" class="form-control" id="Id" placeholder="Supervisor Id"
+                                            formControlName="supervisorId" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="UserName">supervisor UserName</label>
+                                        <input type="text" class="form-control" id="UserName"
+                                            placeholder="Supervisor UserName" formControlName="supervisorUsername">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Password">supervisor Password</label>
+                                        <input type="password" class="form-control" id="Password"
+                                            placeholder="Supervisor Password" formControlName="supervisorPassword">
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                                ​
+                                <div class="card-footer">
+                                    <button [disabled]="!UpdateSupervisor.valid" type="submit" class="btn">Update
+                                        Supervisor</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

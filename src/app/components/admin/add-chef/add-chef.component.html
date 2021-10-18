@@ -1,1 +1,58 @@
-<p>add-chef works!</p>
+<div class="wrapper">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 2077.69px;">
+
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-12">
+                        <h1>Add Chef</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-md-12">
+                        <!-- general form elements -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Add Chef Details</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <!-- form start -->
+                            <form [formGroup]="AddChefForm">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="chefName">Name</label>
+                                        <input type="text" class="form-control" id="chefName" placeholder="Chef Name"
+                                            formControlName="chefName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="chefUsername">Username</label>
+                                        <input type="text" class="form-control" id="chefUsername"
+                                            placeholder="Chef UserName" formControlName="chefUsername">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="chefPassword">Password</label>
+                                        <input type="password" class="form-control" id="chefPassword"
+                                            placeholder="Chef Password" formControlName="chefPassword">
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer">
+                                    <button [disabled]="!AddChefForm.valid" type="submit" (click)="addChef()" class="btn ">Add Chef</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

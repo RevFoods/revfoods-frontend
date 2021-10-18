@@ -9,5 +9,6 @@ export class Food {
   foodType: string;
   foodStatus: boolean;
   foodCategory: FoodCategory;
+  foodQuantity: number = 1;
   cartList: Cart[];
 }

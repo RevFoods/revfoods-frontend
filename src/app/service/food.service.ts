@@ -28,7 +28,21 @@ export class FoodService {
     return this.http.get<Food[]>(this.url + "s");
   }
 
+  public addFoodToFoodCategory(
+    food: Food,
+    foodCategoryId: number
+  ): Observable<Food> {
+    return this.http.put<Food>(
+      this.url + "/foodCategory/" + foodCategoryId,
+      food
+    );
+  }
+
   public getFoodById(foodId: number): Observable<Food> {
     return this.http.get<Food>(this.url + "/" + foodId);
+  }
+
+  public getFoodsByCategoryId(foodCategoryId: number): Observable<Food[]> {
+    return this.http.get<Food[]>(this.url + "s/foodCategory/" + foodCategoryId);
   }
 }

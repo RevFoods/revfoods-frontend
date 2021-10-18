@@ -1,8 +1,6 @@
 <div class="register-wrapper">
     <div class="register-page">
         <div class="register-box">
-
-
             <div class="card">
                 <div class="card-body register-card-body">
 
@@ -14,9 +12,10 @@
                         <h4>Create an account </h4>
                     </div>
 
-                    <form action="../../index.html" method="post">
+                    <form [formGroup]="registerForm" autocomplete="off">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Full name">
+                            <input type="text" class="form-control" placeholder="Full Name" formControlName="name"
+                                name="name">
                             <div class="input-group-append">
                                 <div class="input-group-text">
                                     <span class="fas fa-user"></span>
@@ -24,7 +23,8 @@
                             </div>
                         </div>
                         <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control" placeholder="Email" formControlName="email"
+                                name="email">
                             <div class="input-group-append">
                                 <div class="input-group-text">
                                     <span class="fas fa-envelope"></span>
@@ -32,7 +32,8 @@
                             </div>
                         </div>
                         <div class="input-group mb-3">
-                            <input type="number" class="form-control" placeholder="Phone Number">
+                            <input type="text" class="form-control" placeholder="Phone Number" formControlName="phone"
+                                name="phone">
                             <div class="input-group-append">
                                 <div class="input-group-text">
 
@@ -42,18 +43,19 @@
                         </div>
                         <div class="row">
                             <div class="col-8">
-                                <div class="icheck-primary">
-                                    <input type="checkbox" id="agreeTerms" name="terms" value="agree">
-                                    <label for="agreeTerms">
-                                        I agree to the <a href="#" style="color:#f15d1f">terms</a>
-                                    </label>
+                                <div class="form-group clearfix">
+                                    <div class="icheck-primary d-inline">
+                                        <input type="radio" id="hygiene2" name="r1">
+                                        <label for="hygiene2">I agree to the <a href="#" style="color:#f15d1f">terms</a>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
                         <!-- /.col -->
                         <div class="col-12">
-                            <button type="submit" class="btn btn-block">REGISTER</button>
+                            <button type="submit" [disabled]="!registerForm.valid" (click)="register()"
+                                class="btn btn-block">Register Now</button>
                         </div>
                         <!-- /.col -->
                     </form>

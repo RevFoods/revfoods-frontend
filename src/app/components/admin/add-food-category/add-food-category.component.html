@@ -1,1 +1,59 @@
-<p>add-food-category works!</p>
+<div class="wrapper">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 2077.69px;">
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-12">
+                        <h1>Add Food Category</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-md-12">
+                        <!-- general form elements -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Add Food Category Details</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <!-- form start -->
+                            <form [formGroup]="AddFoodCategoryForm" (ngSubmit)="addFoodCategory()">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="foodCategoryName">Name</label>
+                                        <input type="text" class="form-control" id="foodCategory Name"
+                                            placeholder="Food Category Name" formControlName="foodCategoryName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="foodCategoryAvatar">Avatar</label>
+                                        <input type="text" class="form-control" id="foodCategoryAvatar"
+                                            placeholder="Food Category Avatar" formControlName="foodCategoryAvatar">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="foodCategoryDescription">Description</label>
+                                        <input type="text" class="form-control" id="foodCategoryDescription"
+                                            placeholder="Food Category Description"
+                                            formControlName="foodCategoryDescription">
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+
+                                <div class="card-footer">
+                                    <button [disabled]="!AddFoodCategoryForm.valid" type="submit" class="btn">Add Food
+                                        Category</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

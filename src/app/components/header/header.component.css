@@ -2,3 +2,20 @@
   border-bottom: 1px solid #dee2e6;
   z-index: 1034;
 }
+
+.fa-question-circle:before {
+  content: "\f059";
+  font-size: 160%;
+}
+
+.fa-question-circle:hover {
+  color: #f26f26;
+}
+
+.fa-sign-out-alt:before {
+  font-size: 160%;
+}
+
+.fa-sign-out-alt:hover {
+  color: #f26f26;
+}

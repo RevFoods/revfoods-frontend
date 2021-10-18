@@ -1,1 +1,130 @@
-<p>view-customer-orders works!</p>
+<div class="wrapper">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 666.5px;">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0">Orders</h1>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">All Order Details</h3>
+                    </div>
+                    <!-- ./card-header -->
+                    <div class="card-body">
+                        <table class="table table-bordered table-hover">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th class="text-center">Status</th>
+                                    <th class="text-center">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody *ngFor="let foodOrder of foodOrderList">
+                                <tr data-widget="expandable-table" aria-expanded="false">
+                                    <td>{{foodOrder.foodOrderId}}</td>
+                                    <td>{{foodOrder.cart.food.foodName}}</td>
+                                    <td>{{foodOrder.cart.cartQuantity}}</td>
+                                    <td>{{foodOrder.cart.food.foodPrice}}</td>
+                                    <td class="text-center">
+                                        <div
+                                            *ngIf="!(foodOrder.orderStatus.orderStatus==='Cancelled' || foodOrder.orderStatus.orderStatus=='Unavaliable')">
+                                            <span class="badge bg-success"
+                                                style="margin-top: 1rem;">{{foodOrder.orderStatus.orderStatus}}</span>
+                                        </div>
+                                        <div
+                                            *ngIf="(foodOrder.orderStatus.orderStatus==='Cancelled' || foodOrder.orderStatus.orderStatus=='Unavaliable')">
+                                            <span class="badge bg-danger"
+                                                style="margin-top: 1rem;">{{foodOrder.orderStatus.orderStatus}}</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div
+                                            *ngIf="(foodOrder.orderStatus.orderStatus==='Ordered' || foodOrder.orderStatus.orderStatus=='Accepted')">
+                                            <button type="button" class="btn"
+                                                (click)="cancelOrder(foodOrder.foodOrderId)">Cancel Order</button>
+                                        </div>
+                                        <div
+                                            *ngIf="!(foodOrder.orderStatus.orderStatus ==='Ordered' || foodOrder.orderStatus.orderStatus==='Accepted')">
+                                            <button type="button" class="btn"
+                                                (click)="cancelOrder(foodOrder.foodOrderId)" disabled>Cancel
+                                                Order</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- /.card-body -->
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="row" style="margin-top: 2rem;">
+                            <!-- /.col -->
+                            <div class="col-6">
+                                <p class="lead">Your Food will be ready in : <span style="font-weight: bolder;"><i
+                                            class="fas fa-stopwatch"></i> {{prepTime}} mins.</span></p>
+
+                            </div>
+                            <div class="col-6">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th>Total:</th>
+                                                <td>₹ {{price}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <div class="row no-print">
+                            <div class="col-12" *ngIf="price > 0">
+                                <button (click)="payment()" type="button" class="btn float-right"
+                                    style="margin-right: 10rem;"><i class="far fa-credit-card"></i> Submit
+                                    Payment
+                                </button>
+                            </div>
+                            <div class="col-12" *ngIf="price == 0">
+                                <button (click)="payment()" type="button" class="btn float-right"
+                                    style="margin-right: 10rem;" disabled><i class="far fa-credit-card"></i> Submit
+                                    Payment
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--/. container-fluid -->​
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+</div>
+
+<!-- <div class="total">
+    <div class="subtotal">
+        <p>Subtotal </p>
+        <p class="sum">₹ {{sum}}</p>
+    </div>
+
+    <button type="button" id="checkout" class="btn btn-block">Checkout</button>
+</div> -->
+<!-- <div class="prep-time">
+    <p>Your order will be ready in : {{prepTime}} minutes</p>
+</div> -->

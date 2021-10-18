@@ -1,1 +1,85 @@
-<p>manage-food works!</p>
+<div class="wrapper">
+
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 2077.69px;">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-9">
+                        <h1>Manage Food</h1>
+                    </div>
+                </div>
+                <button type="button" class="btn" routerLink="/revfoods/add-food"><i
+                        class="nav-icon fas fa-plus-square"></i>&nbsp;&nbsp;&nbsp;Add
+                    Food</button>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">All Food Details</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <table class="table table-bordered table-hover" data-widget="expandable-table"
+                                    aria-expanded="true">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th style="width: 30px">ID</th>
+                                            <th>Name</th>
+                                            <th>Price</th>
+                                            <th>Avatar</th>
+                                            <th>Prep Time</th>
+                                            <th>Type</th>
+                                            <th>Category</th>
+                                            <th class="text-center">Status</th>
+                                            <th class="text-center" colspan="2">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody *ngFor="let food of foodList">
+                                        <tr>
+                                            <td>{{food.foodId}}</td>
+                                            <td>{{food.foodName}}</td>
+                                            <td>{{food.foodPrice}}</td>
+                                            <td><img [src]="food.foodAvatar"></td>
+                                            <td>{{food.foodPrepTime}}</td>
+                                            <td>{{food.foodType}}</td>
+                                            <td>{{food.foodCategory.foodCategoryName}}</td>
+                                            <td>
+                                                <div *ngIf="food.foodStatus==true"><span
+                                                        class="badge badge-success">{{food.foodStatus |
+                                                        foodStatus}}</span> </div>
+                                                <div *ngIf="food.foodStatus==false"><span
+                                                        class="badge badge-danger">{{food.foodStatus |
+                                                        foodStatus}}</span> </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn" (click)="update(food.foodId)"><i
+                                                        class="fas fa-user-edit"></i>&nbsp;&nbsp;Update</button>
+                                                &nbsp;&nbsp;
+                                                &nbsp; <button type="button" class="btn "
+                                                    (click)="delete(food.foodId)"><i
+                                                        class="fas fa-trash-alt"></i>&nbsp;&nbsp;Delete</button>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.content-wrapper -->
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

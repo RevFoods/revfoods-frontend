@@ -17,22 +17,22 @@ describe("CustomerTableService", () => {
   });
   it("should get all customertables", () => {
     const service: CustomerTableService = TestBed.get(CustomerTableService);
-    expect(service.getAllcustomerTables).toBeTruthy();
+    expect(service.getAllCustomerTables).toBeTruthy();
   });
   it("should get all customertables by id", () => {
     const service: CustomerTableService = TestBed.get(CustomerTableService);
-    expect(service.getcustomerTableById).toBeTruthy();
+    expect(service.getCustomerTableById).toBeTruthy();
   });
   it("should add customertables", () => {
     const service: CustomerTableService = TestBed.get(CustomerTableService);
-    expect(service.addcustomerTable).toBeTruthy();
+    expect(service.addCustomerTable).toBeTruthy();
   });
   it("should delete customertables", () => {
     const service: CustomerTableService = TestBed.get(CustomerTableService);
-    expect(service.deletecustomerTable).toBeTruthy();
+    expect(service.deleteCustomerTable).toBeTruthy();
   });
   it("should update customertables", () => {
     const service: CustomerTableService = TestBed.get(CustomerTableService);
-    expect(service.updatecustomerTable).toBeTruthy();
+    expect(service.updateCustomerTable).toBeTruthy();
   });
 });

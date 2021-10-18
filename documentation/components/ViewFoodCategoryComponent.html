@@ -1,0 +1,1023 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>revfoods-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">revfoods-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  ViewFoodCategoryComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/customer/view-food-category/view-food-category.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-view-food-category</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./view-food-category.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./view-food-category.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addCart" >addCart</a>
+                            </li>
+                            <li>
+                                <a href="#customer" >customer</a>
+                            </li>
+                            <li>
+                                <a href="#foodCategory" >foodCategory</a>
+                            </li>
+                            <li>
+                                <a href="#foodList" >foodList</a>
+                            </li>
+                            <li>
+                                <a href="#prodQuantity" >prodQuantity</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addFoodToCart" >addFoodToCart</a>
+                            </li>
+                            <li>
+                                <a href="#addToCart" >addToCart</a>
+                            </li>
+                            <li>
+                                <a href="#dec" >dec</a>
+                            </li>
+                            <li>
+                                <a href="#inc" >inc</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(foodService: <a href="../injectables/FoodService.html" target="_self">FoodService</a>, cartService: <a href="../injectables/CartService.html" target="_self">CartService</a>, toaster: ToastrService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/customer/view-food-category/view-food-category.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>foodService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FoodService.html" target="_self" >FoodService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cartService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CartService.html" target="_self" >CartService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toaster</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastrService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addFoodToCart"></a>
+                    <span class="name">
+                        <span ><b>addFoodToCart</b></span>
+                        <a href="#addFoodToCart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addFoodToCart(food: <a href="../classes/Food.html" target="_self">Food</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/components/customer/view-food-category/view-food-category.component.ts:51</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>food</td>
+                                    <td>
+                                                <code><a href="../classes/Food.html" target="_self" >Food</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addToCart"></a>
+                    <span class="name">
+                        <span ><b>addToCart</b></span>
+                        <a href="#addToCart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addToCart(food: <a href="../classes/Food.html" target="_self">Food</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/app/components/customer/view-food-category/view-food-category.component.ts:39</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>food</td>
+                                    <td>
+                                                <code><a href="../classes/Food.html" target="_self" >Food</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dec"></a>
+                    <span class="name">
+                        <span ><b>dec</b></span>
+                        <a href="#dec"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>dec(food: <a href="../classes/Food.html" target="_self">Food</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/app/components/customer/view-food-category/view-food-category.component.ts:47</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>food</td>
+                                    <td>
+                                                <code><a href="../classes/Food.html" target="_self" >Food</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inc"></a>
+                    <span class="name">
+                        <span ><b>inc</b></span>
+                        <a href="#inc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>inc(food: <a href="../classes/Food.html" target="_self">Food</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/components/customer/view-food-category/view-food-category.component.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>food</td>
+                                    <td>
+                                                <code><a href="../classes/Food.html" target="_self" >Food</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="25"
+                            class="link-to-prism">src/app/components/customer/view-food-category/view-food-category.component.ts:25</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addCart"></a>
+                    <span class="name">
+                        <span ><b>addCart</b></span>
+                        <a href="#addCart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/customer/view-food-category/view-food-category.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="customer"></a>
+                    <span class="name">
+                        <span ><b>customer</b></span>
+                        <a href="#customer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Customer.html" target="_self" >Customer</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/customer/view-food-category/view-food-category.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="foodCategory"></a>
+                    <span class="name">
+                        <span ><b>foodCategory</b></span>
+                        <a href="#foodCategory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/FoodCategory.html" target="_self" >FoodCategory</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/customer/view-food-category/view-food-category.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="foodList"></a>
+                    <span class="name">
+                        <span ><b>foodList</b></span>
+                        <a href="#foodList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Food.html" target="_self" >Food[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/customer/view-food-category/view-food-category.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="prodQuantity"></a>
+                    <span class="name">
+                        <span ><b>prodQuantity</b></span>
+                        <a href="#prodQuantity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/customer/view-food-category/view-food-category.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &quot;@angular/core&quot;;
+import { FoodCategoryService } from &quot;./../../../service/food-category.service&quot;;
+import { Food } from &quot;src/app/model/food&quot;;
+import { FoodCategory } from &quot;./../../../model/food-category&quot;;
+import { FoodService } from &quot;src/app/service/food.service&quot;;
+import { CartService } from &quot;src/app/service/cart.service&quot;;
+import { ToastrService } from &quot;ngx-toastr&quot;;
+import { Customer } from &quot;src/app/model/customer&quot;;
+@Component({
+  selector: &quot;app-view-food-category&quot;,
+  templateUrl: &quot;./view-food-category.component.html&quot;,
+  styleUrls: [&quot;./view-food-category.component.css&quot;],
+})
+export class ViewFoodCategoryComponent implements OnInit {
+  foodCategory: FoodCategory;
+  foodList: Food[];
+  addCart: boolean;
+  prodQuantity: number;
+  customer: Customer;
+  constructor(
+    private foodService: FoodService,
+    private cartService: CartService,
+    private toaster: ToastrService
+  ) {}
+  ngOnInit() {
+    this.customer &#x3D; JSON.parse(localStorage.getItem(&quot;customer&quot;));
+    this.foodService
+      .getFoodsByCategoryId(history.state.foodCategoryId)
+      .subscribe(async (res) &#x3D;&gt; {
+        console.log(res);
+        this.foodList &#x3D; res;
+        for (let food of res) {
+          food.foodQuantity &#x3D; 0;
+          console.log(food.foodQuantity);
+        }
+      });
+  }
+
+  addToCart(food: Food) {
+    food.foodQuantity +&#x3D; 1;
+    console.log(food.foodQuantity);
+  }
+
+  inc(food: Food) {
+    food.foodQuantity +&#x3D; 1;
+  }
+  dec(food: Food) {
+    food.foodQuantity -&#x3D; 1;
+  }
+
+  addFoodToCart(food: Food) {
+    this.cartService
+      .addFoodAndCustomerToCart(
+        food.foodId,
+        this.customer.customerId,
+        food.foodQuantity
+      )
+      .subscribe((res) &#x3D;&gt; {
+        console.log(res);
+        this.toaster.success(
+          food.foodName + &quot; is added to the cart.&quot;,
+          &quot;Food Added To Cart&quot;
+        );
+        food.foodQuantity &#x3D; 0;
+      });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    &lt;div class&#x3D;&quot;content-wrapper&quot;&gt;
+        &lt;section class&#x3D;&quot;content&quot;&gt;
+            &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+                &lt;h2 class&#x3D;&quot;rev-title&quot;&gt;Inspiration for your first order&lt;/h2&gt;
+                &lt;div class&#x3D;&quot;div-grid&quot;&gt;
+                    &lt;div *ngFor&#x3D;&quot;let food of foodList&quot;&gt;
+                        &lt;div class&#x3D;&quot;card&quot;&gt;
+                            &lt;img class&#x3D;&quot;card-img-top&quot; [src]&#x3D;&quot;food.foodAvatar&quot; [alt]&#x3D;&quot;food.foodName&quot;&gt;
+                            &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                                &lt;h5 class&#x3D;&quot;card-title&quot;&gt;{{food.foodName}}&lt;/h5&gt;
+                                &lt;h6 class&#x3D;&quot;card-text&quot; id&#x3D;&quot;card-price&quot;&gt;₹ {{food.foodPrice}}&lt;/h6&gt;
+                                &lt;h1 class&#x3D;&quot;card-text&quot;&gt;{{food.foodCategory.foodCategoryName}}&lt;/h1&gt;
+                                &lt;h1 class&#x3D;&quot;card-text&quot;&gt;{{food.foodPrepTime}} mins.&lt;/h1&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+                                &lt;div *ngIf&#x3D;&quot;food.foodQuantity &gt; 0&quot;&gt;
+                                    &lt;span style&#x3D;&quot;margin-bottom:0.5rem;&quot;&gt;
+                                        &lt;button class&#x3D;&quot;btn&quot; (click)&#x3D;&quot;dec(food)&quot;&gt;&lt;i
+                                                class&#x3D;&quot;fas fa-minus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                                        {{food.foodQuantity}}
+                                        &lt;button class&#x3D;&quot;btn&quot; (click)&#x3D;&quot;inc(food)&quot;&gt;&lt;i
+                                                class&#x3D;&quot;fas fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                                    &lt;/span&gt;
+                                    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-block&quot; (click)&#x3D;&quot;addFoodToCart(food)&quot;&gt;&lt;i
+                                            class&#x3D;&quot;fas fa-plus-circle&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;Add To Cart&lt;/button&gt;
+                                &lt;/div&gt;
+                                &lt;div *ngIf&#x3D;&quot;food.foodQuantity &#x3D;&#x3D; 0&quot;&gt;
+                                    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-block&quot; (click)&#x3D;&quot;addToCart(food)&quot;&gt;&lt;i
+                                            class&#x3D;&quot;fas fa-plus-circle&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;Add To Cart&lt;/button&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./view-food-category.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">button {
+  border-radius: 0.3rem;
+  background-color: #f26f26;
+  margin: 0.7rem 0;
+  color: #fff;
+  font-size: medium;
+}
+
+button:hover {
+  border-radius: 0.3rem;
+  background-color: #de580d;
+  margin: 0.7rem 0;
+  color: #fff;
+  font-size: medium;
+  transition: color 0.15s ease-in, background-color 0.15s ease-in,
+    border-color 0.15s ease-in, box-shadow 0.15s ease-in;
+}
+
+.div-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card img {
+  margin: 0.5rem 0.5rem;
+  width: 94%;
+  border-radius: 1rem;
+  transition: all 0.4s;
+}
+
+.card:hover img {
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.card-body {
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.card-text {
+  font-weight: lighter;
+  font-size: small;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-block {
+  width: 230px;
+}
+
+.rev-title {
+  padding: 1rem;
+}
+
+.content {
+  margin: 0rem 2rem;
+}
+
+#card-price {
+  font-size: large;
+  font-weight: 700;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="wrapper">    <div class="content-wrapper">        <section class="content">            <div class="container-fluid">                <h2 class="rev-title">Inspiration for your first order</h2>                <div class="div-grid">                    <div *ngFor="let food of foodList">                        <div class="card">                            <img class="card-img-top" [src]="food.foodAvatar" [alt]="food.foodName">                            <div class="card-body">                                <h5 class="card-title">{{food.foodName}}</h5>                                <h6 class="card-text" id="card-price">₹ {{food.foodPrice}}</h6>                                <h1 class="card-text">{{food.foodCategory.foodCategoryName}}</h1>                                <h1 class="card-text">{{food.foodPrepTime}} mins.</h1>                            </div>                            <div class="card-footer">                                <div *ngIf="food.foodQuantity > 0">                                    <span style="margin-bottom:0.5rem;">                                        <button class="btn" (click)="dec(food)"><i                                                class="fas fa-minus-circle"></i></button>                                        {{food.foodQuantity}}                                        <button class="btn" (click)="inc(food)"><i                                                class="fas fa-plus-circle"></i></button>                                    </span>                                    <button type="button" class="btn btn-block" (click)="addFoodToCart(food)"><i                                            class="fas fa-plus-circle"></i>&nbsp;&nbsp;Add To Cart</button>                                </div>                                <div *ngIf="food.foodQuantity == 0">                                    <button type="button" class="btn btn-block" (click)="addToCart(food)"><i                                            class="fas fa-plus-circle"></i>&nbsp;&nbsp;Add To Cart</button>                                </div>                            </div>                        </div>                    </div>                </div>            </div>        </section>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AcceptedOrdersComponent', 'selector': 'app-accepted-orders'},{'name': 'AddChefComponent', 'selector': 'app-add-chef'},{'name': 'AddFoodCategoryComponent', 'selector': 'app-add-food-category'},{'name': 'AddFoodComponent', 'selector': 'app-add-food'},{'name': 'AddSupervisorComponent', 'selector': 'app-add-supervisor'},{'name': 'AdminDashboardComponent', 'selector': 'app-admin-dashboard'},{'name': 'AdminSidebarComponent', 'selector': 'app-admin-sidebar'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BillComponent', 'selector': 'app-bill'},{'name': 'ChefDashboardComponent', 'selector': 'app-chef-dashboard'},{'name': 'ChefSidebarComponent', 'selector': 'app-chef-sidebar'},{'name': 'CustomerHelpsComponent', 'selector': 'app-customer-helps'},{'name': 'CustomerRegisterComponent', 'selector': 'app-customer-register'},{'name': 'CustomerSidebarComponent', 'selector': 'app-customer-sidebar'},{'name': 'FeedbackComponent', 'selector': 'app-feedback'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageChefComponent', 'selector': 'app-manage-chef'},{'name': 'ManageFoodCategoryComponent', 'selector': 'app-manage-food-category'},{'name': 'ManageFoodComponent', 'selector': 'app-manage-food'},{'name': 'ManageSupervisorComponent', 'selector': 'app-manage-supervisor'},{'name': 'OrderCancellationRequestComponent', 'selector': 'app-order-cancellation-request'},{'name': 'PaymentComponent', 'selector': 'app-payment'},{'name': 'PendingBillsComponent', 'selector': 'app-pending-bills'},{'name': 'RevfoodsComponent', 'selector': 'app-revfoods'},{'name': 'ServedOrdersComponent', 'selector': 'app-served-orders'},{'name': 'SubHomeComponent', 'selector': 'app-sub-home'},{'name': 'SupervisorDashboardComponent', 'selector': 'app-supervisor-dashboard'},{'name': 'SupervisorSidebarComponent', 'selector': 'app-supervisor-sidebar'},{'name': 'UpdateChefComponent', 'selector': 'app-update-chef'},{'name': 'UpdateFoodCategoryComponent', 'selector': 'app-update-food-category'},{'name': 'UpdateFoodComponent', 'selector': 'app-update-food'},{'name': 'UpdateSupervisorComponent', 'selector': 'app-update-supervisor'},{'name': 'ViewCartComponent', 'selector': 'app-view-cart'},{'name': 'ViewCustomerOrdersComponent', 'selector': 'app-view-customer-orders'},{'name': 'ViewFoodCategoryComponent', 'selector': 'app-view-food-category'},{'name': 'ViewOrdersComponent', 'selector': 'app-view-orders'},{'name': 'ViewUnoccupiedTablesComponent', 'selector': 'app-view-unoccupied-tables'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ViewFoodCategoryComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ViewFoodCategoryComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

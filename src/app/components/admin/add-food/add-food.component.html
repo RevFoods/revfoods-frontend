@@ -1,1 +1,80 @@
-<p>add-food works!</p>
+<div class="wrapper">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 2077.69px;">
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-9">
+                        <h1>Add Food</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-md-12">
+                        <!-- general form elements -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Add Food Details</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <!-- form start -->
+                            <form [formGroup]="AddFoodForm" (ngSubmit)="addFood()">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="foodName">Name</label>
+                                        <input type="text" class="form-control" id="foodName" placeholder="Food Name"
+                                            formControlName="foodName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="foodPrice">Price</label>
+                                        <input type="number" class="form-control" id="foodPrice"
+                                            placeholder="Food Price" formControlName="foodPrice">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="foodAvatar">Avatar</label>
+                                        <input type="text" class="form-control" id="foodAvatar"
+                                            placeholder="Food Avatar" formControlName="foodAvatar">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="foodPrepTime">Prep Time</label>
+                                        <input type="number" class="form-control" id="foodPrepTime"
+                                            placeholder="Food PrepTime" formControlName="foodPrepTime">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="foodType">Type</label>
+                                        <select class="form-control custom-select" formControlName="foodType">
+                                            <option disabled>Choose here</option>
+                                            <option *ngFor="let foodType of foodTypeList" [ngValue]="foodType">
+                                                {{foodType.foodType}}</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="foodCategory">Food Category</label>
+                                        <select class="form-control custom-select" formControlName="foodCategory">
+                                            <option disabled>Choose here</option>
+                                            <option *ngFor="let foodCategory of foodCategoryList"
+                                                [ngValue]="foodCategory">
+                                                {{foodCategory.foodCategoryName}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+
+                                <div class="card-footer">
+                                    <button [disabled]="!AddFoodForm.valid" type="submit" class="btn">Add Food</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

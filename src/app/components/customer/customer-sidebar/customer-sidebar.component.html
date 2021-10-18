@@ -1,19 +1,12 @@
 <div class="wrapper">
-    <app-header></app-header>
-    <!-- Preloader -->
-    <div class="preloader flex-column justify-content-center align-items-center" style="height: 0px;">
-        <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60"
-            style="display: none;">
-    </div>
-
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="index3.html" class="brand-link">
-            <img src="https://icon2.cleanpng.com/20180331/ezq/kisspng-catering-food-computer-icons-logo-event-management-catering-5abf487c5eb658.714031151522485372388.jpg"
-                alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8; width: 35px; ">
-            <span class="brand-text font-weight-light">RevFoods</span>
-
+        <a class="brand-link">
+            <img src="./assets/img/rev-new-food.png" alt="Logo" class="brand-image img-circle elevation-3" style="width: 37px;
+                height: 35px;">
+            <span class="brand-text" style="    font-family: 'Montserrat', sans-serif; font-weight:
+                800;">REVFOODS</span>
         </a>
 
         <!-- Sidebar -->
@@ -35,9 +28,8 @@
                                 data-accordion="false">
                                 <!-- Add icons to the links using the .nav-icon class
                  with font-awesome or any other icon font library -->
-                                <li class="nav-header"></li>
-                                <li class="nav-item menu-open active">
-                                    <a href="#" class="nav-link ">
+                                <li class="nav-item menu-open" routerLink="./sub-home" routerLinkActive="active">
+                                    <a class="nav-link">
                                         <i class="nav-icon fas fa-tachometer-alt"></i>
                                         <p>
                                             Home
@@ -46,8 +38,8 @@
                                     </a>
 
                                 </li>
-                                <li class="nav-item">
-                                    <a href="pages/widgets.html" class="nav-link">
+                                <li class="nav-item" routerLink="./cart" routerLinkActive="active">
+                                    <a class="nav-link">
                                         <i class="nav-icon fas fa-cart-plus"></i>
                                         <p>
                                             View Cart
@@ -55,8 +47,8 @@
                                         </p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="pages/widgets.html" class="nav-link">
+                                <li class="nav-item" routerLink="./customer-orders" routerLinkActive="active">
+                                    <a class="nav-link">
 
                                         <i class="nav-icon fas fa-list-ul"></i>
                                         <p>
@@ -66,25 +58,17 @@
                                     </a>
                                 </li>
                                 <li class="nav-header">Help & Settings</li>
-                                <li class="nav-item">
-                                    <a href="pages/widgets.html" class="nav-link">
-
-                                        <i class="nav-icon fas fa-user-circle"></i>
-                                        <p>
-                                            Your Account
-                                        </p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/widgets.html" class="nav-link">
+                                <li class="nav-item" routerLink="./help" routerLinkActive="active">
+                                    <a class="nav-link">
                                         <i class="nav-icon fas fa-user-cog"></i>
                                         <p>
                                             Customer Service
                                         </p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="pages/widgets.html" class="nav-link">
+
+                                <li class="nav-item" (click)="logOut()">
+                                    <a class="nav-link">
                                         <i class="nav-icon fas fa-sign-out-alt"></i>
                                         <p>
                                             Sign Out
@@ -111,5 +95,4 @@
         </div>
         <!-- /.sidebar -->
     </aside>
-
 </div>

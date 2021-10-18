@@ -1,1 +1,63 @@
-<p>update-chef works!</p>
+<div class="wrapper">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 2077.69px;">
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-12">
+                        <h1>Update Chef</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-md-12">
+                        <!-- general form elements -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Update Chef Details</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <!-- form start -->
+                            <form [formGroup]="ChefUpdateForm" (ngSubmit)="updateChef()">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="Id">Chef Id</label>
+                                        <input type="text" class="form-control" id="Id" placeholder="Chef Id"
+                                            formControlName="chefId" disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Name">Chef Name</label>
+                                        <input type="text" class="form-control" id="Name" placeholder="Chef Name"
+                                            formControlName="chefName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="UserName">Chef UserName</label>
+                                        <input type="text" class="form-control" id="UserName"
+                                            placeholder="Chef UserName" formControlName="chefUsername">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Password">Chef Password</label>
+                                        <input type="password" class="form-control" id="Password"
+                                            placeholder="Chef Password" formControlName="chefPassword">
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                                ​
+                                <div class="card-footer">
+                                    <button [disabled]="!ChefUpdateForm.valid" type="submit" class="btn">Update
+                                        Chef</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

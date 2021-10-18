@@ -1,25 +1,25 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+// import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewCustomerOrdersComponent } from './view-customer-orders.component';
+// import { ViewCustomerOrdersComponent } from './view-customer-orders.component';
 
-describe('ViewCustomerOrdersComponent', () => {
-  let component: ViewCustomerOrdersComponent;
-  let fixture: ComponentFixture<ViewCustomerOrdersComponent>;
+// describe('ViewCustomerOrdersComponent', () => {
+//   let component: ViewCustomerOrdersComponent;
+//   let fixture: ComponentFixture<ViewCustomerOrdersComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ViewCustomerOrdersComponent ]
-    })
-    .compileComponents();
-  }));
+//   beforeEach(async(() => {
+//     TestBed.configureTestingModule({
+//       declarations: [ ViewCustomerOrdersComponent ]
+//     })
+//     .compileComponents();
+//   }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(ViewCustomerOrdersComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+//   beforeEach(() => {
+//     fixture = TestBed.createComponent(ViewCustomerOrdersComponent);
+//     component = fixture.componentInstance;
+//     fixture.detectChanges();
+//   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+//   it('should create', () => {
+//     expect(component).toBeTruthy();
+//   });
+// });

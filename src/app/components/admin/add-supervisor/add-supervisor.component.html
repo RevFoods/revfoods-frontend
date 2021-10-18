@@ -1,1 +1,55 @@
-<p>add-supervisor works!</p>
+<div class="wrapper">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 2077.69px;">
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <section class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-12">
+                                <h1>Add Supervisor</h1>
+                            </div>
+                        </div>
+                    </div><!-- /.container-fluid -->
+                </section>
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-md-12">
+                        <!-- general form elements -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Add Supervisor Details</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <!-- form start -->
+                            <form [formGroup]="AddSupervisor" (ngSubmit)="onSubmit()">
+                                <div class="card-body">
+
+
+                                    <div class="form-group">
+                                        <label for="UserName">supervisor UserName</label>
+                                        <input type="text" class="form-control" id="supervisorUsername"
+                                            placeholder="Supervisor UserName" formControlName="supervisorUsername">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Password">supervisor Password</label>
+                                        <input type="password" class="form-control" id="supervisorPassword"
+                                            placeholder="Supervisor Password" formControlName="supervisorPassword">
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                                ​
+                                <div class="card-footer">
+                                    <button [disabled]="!AddSupervisor.valid" type="submit" class="btn">Add
+                                        Supervisor</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

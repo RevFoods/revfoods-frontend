@@ -1,1 +1,64 @@
-<p>pending-bills works!</p>
+<div class="wrapper">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 2077.69px;">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-12">
+                        <h1>Served Orders</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+
+                            <!-- /.card-header -->
+                            <div class="card-header">
+                                <h3 class="card-title">Served Order Details</h3>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th class="text-center">ID</th>
+                                            <th class="text-center">Name</th>
+                                            <th class="text-center">Table</th>
+                                            <th class="text-center">Status</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let customer of customerList" data-widget="expandable-table"
+                                            aria-expanded="true">
+                                            <td class="text-center">{{customer.customerId}}</td>
+                                            <td class="text-center">{{customer.customerName}}</td>
+                                            <td class="text-center">{{customer.customerTable.customerTableNumber}}</td>
+                                            <td class="text-center"><span class="badge bg-danger">Unpaid</span></td>
+                                            <td class="text-center">
+                                                <button (click)="paid(customer.customerId)" type="button" class="btn"><i
+                                                        class="fas fa-credit-card"></i>&nbsp;
+                                                    &nbsp;Paid
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
+
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.content-wrapper -->
+        </section>
+    </div>
+</div>

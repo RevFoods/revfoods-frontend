@@ -1,0 +1,20 @@
+<div *ngIf="isCustomer">
+    <app-header></app-header>
+    <app-customer-sidebar></app-customer-sidebar>
+    <router-outlet></router-outlet>
+</div>
+<div *ngIf="isSupervisor">
+    <app-header></app-header>
+    <app-supervisor-sidebar></app-supervisor-sidebar>
+    <router-outlet></router-outlet>
+</div>
+<div *ngIf="isChef">
+    <app-header></app-header>
+    <app-chef-sidebar></app-chef-sidebar>
+    <router-outlet></router-outlet>
+</div>
+<div *ngIf="isAdmin">
+    <app-header></app-header>
+    <app-admin-sidebar></app-admin-sidebar>
+    <router-outlet></router-outlet>
+</div>

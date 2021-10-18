@@ -34,19 +34,34 @@ export class FoodOrderService {
   }
 
   public addCartToFoodOrder(cartId: number): Observable<FoodOrder> {
-    return this.http.post<FoodOrder>(this.url + "/cart/", cartId);
+    return this.http.post<FoodOrder>(this.url + "/cart/" + cartId, cartId);
   }
 
-  public getFoodOrdersByCustomerId(customerId: number): Observable<FoodOrder[]> {
+  public getFoodOrdersByCustomerId(
+    customerId: number
+  ): Observable<FoodOrder[]> {
     return this.http.get<FoodOrder[]>(this.url + "s/customer/" + customerId);
   }
 
-  public updateFoodOrderStatus(foodOrderId: number,orderStatusId: number): Observable<FoodOrder> {
-    return this.http.put<FoodOrder>(this.url + "/" + foodOrderId +  "/orderStatus/", orderStatusId);
+  public updateFoodOrderStatus(
+    foodOrderId: number,
+    orderStatusId: number
+  ): Observable<FoodOrder> {
+    return this.http.put<FoodOrder>(
+      this.url + "/" + foodOrderId + "/orderStatus/" + orderStatusId,
+      foodOrderId
+    );
   }
 
-  public getAllFoodOrdersByOrderStatusId(orderStatusId: number): Observable<FoodOrder[]> {
-    return this.http.get<FoodOrder[]>(this.url + "s/orderStatus/" + orderStatusId);
+  public getAllFoodOrdersByOrderStatusId(
+    orderStatusId: number
+  ): Observable<FoodOrder[]> {
+    return this.http.get<FoodOrder[]>(
+      this.url + "s/orderStatus/" + orderStatusId
+    );
   }
 
+  public getAllFoodOrdersForChef(): Observable<FoodOrder[]> {
+    return this.http.get<FoodOrder[]>(this.url + "s/chef");
+  }
 }

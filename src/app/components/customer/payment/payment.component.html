@@ -1,1 +1,121 @@
-<p>payment works!</p>
+<!--  Content Wrapper. Contains page content -->
+<div class="wrapper">
+    <div class="content-wrapper" style="min-height: 2168.88px;">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Payment</h1>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- Main content -->
+        <section class="content" id="content">
+            <div class="container-fluid">
+                <div class="invoice p-3 mb-3">
+                    <!-- title row -->
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>
+                                <i class="fas fa-receipt"></i>&nbsp;&nbsp;RevFoods
+                                <small class="float-right">Date : {{Date | date:'dd/MM/yyyy'
+                                    }}</small>
+                            </h4>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <br>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">All Order Details</h3>
+                        </div>
+                        <!-- ./card-header -->
+                        <div class="card-body">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th class="text-center">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody *ngFor="let foodOrder of foodOrderList">
+                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                        <td>{{foodOrder.foodOrderId}}</td>
+                                        <td>{{foodOrder.cart.food.foodName}}</td>
+                                        <td>{{foodOrder.cart.cartQuantity}}</td>
+                                        <td>{{foodOrder.cart.food.foodPrice}}</td>
+                                        <td class="text-center">
+                                            <div
+                                                *ngIf="!(foodOrder.orderStatus.orderStatus==='Cancelled' || foodOrder.orderStatus.orderStatus=='Unavaliable')">
+                                                <span class="badge bg-success"
+                                                    style="margin-top: 1rem;">{{foodOrder.orderStatus.orderStatus}}</span>
+                                            </div>
+                                            <div
+                                                *ngIf="(foodOrder.orderStatus.orderStatus==='Cancelled' || foodOrder.orderStatus.orderStatus=='Unavaliable')">
+                                                <span class="badge bg-danger"
+                                                    style="margin-top: 1rem;">{{foodOrder.orderStatus.orderStatus}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- /.card-body -->
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="row" style="margin-top: 2rem;">
+                                <!-- /.col -->
+                                <div class="col-6">
+                                    <p class="lead">Payment Methods:</p>
+                                    <img src="./assets/img/credit/visa.png" alt="Visa">
+                                    <img src="./assets/img/credit/mastercard.png" alt="Mastercard">
+                                    <img src="./assets/img/credit/american-express.png" alt="American Express">
+                                    <img src="./assets/img/credit/paypal2.png" alt="Paypal">
+
+                                    <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
+                                        Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning
+                                        heekya
+                                        handango imeem
+                                        plugg
+                                        dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Total:</th>
+                                                    <td>₹ {{price}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <div class="row no-print">
+                                <div class="col-12">
+                                    <button (click)="checkout(price)" type="button" class="btn float-right"
+                                        style="margin-right: 10rem;"><i class="far fa-credit-card"></i> Submit
+                                        Payment
+                                    </button>
+                                    <button type="button" (click)="genratePDF()" class="btn float-right"
+                                        style="margin-right: 2rem;">
+                                        <i class="fas fa-download"></i> Generate Bill
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

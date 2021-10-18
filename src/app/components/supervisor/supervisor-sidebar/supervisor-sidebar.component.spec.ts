@@ -1,25 +1,25 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+// import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SupervisorSidebarComponent } from './supervisor-sidebar.component';
+// import { SupervisorSidebarComponent } from './supervisor-sidebar.component';
 
-describe('SupervisorSidebarComponent', () => {
-  let component: SupervisorSidebarComponent;
-  let fixture: ComponentFixture<SupervisorSidebarComponent>;
+// describe('SupervisorSidebarComponent', () => {
+//   let component: SupervisorSidebarComponent;
+//   let fixture: ComponentFixture<SupervisorSidebarComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ SupervisorSidebarComponent ]
-    })
-    .compileComponents();
-  }));
+//   beforeEach(async(() => {
+//     TestBed.configureTestingModule({
+//       declarations: [ SupervisorSidebarComponent ]
+//     })
+//     .compileComponents();
+//   }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(SupervisorSidebarComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+//   beforeEach(() => {
+//     fixture = TestBed.createComponent(SupervisorSidebarComponent);
+//     component = fixture.componentInstance;
+//     fixture.detectChanges();
+//   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+//   it('should create', () => {
+//     expect(component).toBeTruthy();
+//   });
+// });

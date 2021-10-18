@@ -7,5 +7,6 @@ export class Cart {
   customer: Customer;
   food: Food;
   cartQuantity: number;
-  foodOrder : FoodOrder;
+  foodOrder: FoodOrder;
+  cartOrderedStatus: boolean;
 }

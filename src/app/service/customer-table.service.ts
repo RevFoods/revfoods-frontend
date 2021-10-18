@@ -39,7 +39,11 @@ export class CustomerTableService {
     return this.http.get<CustomerTable>(this.url + "/" + customerTableId);
   }
 
-  public getAllCustomerTablesByCustomerTableStatus(customerTableStatus:boolean):Observable<CustomerTable[]>{
-    return this.http.get<CustomerTable[]>(this.url +"s"+ "/" + "customerTableStatus"+customerTableStatus)
+  public getAllCustomerTablesByCustomerTableStatus(): Observable<
+    CustomerTable[]
+  > {
+    return this.http.get<CustomerTable[]>(
+      this.url + "s/" + "customerTableStatus/false"
+    );
   }
 }

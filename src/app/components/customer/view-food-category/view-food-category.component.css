@@ -1,0 +1,82 @@
+button {
+  border-radius: 0.3rem;
+  background-color: #f26f26;
+  margin: 0.7rem 0;
+  color: #fff;
+  font-size: medium;
+}
+
+button:hover {
+  border-radius: 0.3rem;
+  background-color: #de580d;
+  margin: 0.7rem 0;
+  color: #fff;
+  font-size: medium;
+  transition: color 0.15s ease-in, background-color 0.15s ease-in,
+    border-color 0.15s ease-in, box-shadow 0.15s ease-in;
+}
+
+.div-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card img {
+  margin: 0.5rem 0.5rem;
+  width: 94%;
+  border-radius: 1rem;
+  transition: all 0.4s;
+}
+
+.card:hover img {
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.card-body {
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.card-text {
+  font-weight: lighter;
+  font-size: small;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-block {
+  width: 230px;
+}
+
+.rev-title {
+  padding: 1rem;
+}
+
+.content {
+  margin: 0rem 2rem;
+}
+
+#card-price {
+  font-size: large;
+  font-weight: 700;
+}

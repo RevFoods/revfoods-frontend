@@ -34,11 +34,31 @@ export class CartService {
     return this.http.delete(this.url + "/" + cartId);
   }
 
-  public addFoodAndCustomerToCart(foodId: number,customerId: number,cartQuantity : number): Observable<Cart>{
-    return this.http.post<Cart>(this.url +"/customer/" +customerId + "/food/" +foodId +"/cartQuantity/"+cartQuantity,foodId);
+  public addFoodAndCustomerToCart(
+    foodId: number,
+    customerId: number,
+    cartQuantity: number
+  ): Observable<Cart> {
+    return this.http.post<Cart>(
+      this.url +
+        "/customer/" +
+        customerId +
+        "/food/" +
+        foodId +
+        "/cartQuantity/" +
+        cartQuantity,
+      foodId
+    );
   }
 
-  public  getAllCartsByCustomerId(customerId:number): Observable<Cart[]>{
-    return this.http.get<Cart[]>(this.url +"/customer/"+customerId);
+  public getAllCartsByCustomerId(customerId: number): Observable<Cart[]> {
+    return this.http.get<Cart[]>(this.url + "/customer/" + customerId);
+  }
+
+  public updateCartOrderedStatus(cartId: number): Observable<Cart> {
+    return this.http.put<Cart>(
+      this.url + "/" + cartId + "/cartOrderedStatus/true",
+      cartId
+    );
   }
 }

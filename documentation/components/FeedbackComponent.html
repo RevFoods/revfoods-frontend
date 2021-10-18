@@ -1,0 +1,858 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>revfoods-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">revfoods-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  FeedbackComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/customer/feedback/feedback.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-feedback</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./feedback.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./feedback.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#customer" >customer</a>
+                            </li>
+                            <li>
+                                <a href="#feedback" >feedback</a>
+                            </li>
+                            <li>
+                                <a href="#feedback1" >feedback1</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addFeddback" >addFeddback</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(toastr: ToastrService, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, customerTableService: <a href="../injectables/CustomerTableService.html" target="_self">CustomerTableService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/customer/feedback/feedback.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>toastr</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastrService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>customerTableService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CustomerTableService.html" target="_self" >CustomerTableService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addFeddback"></a>
+                    <span class="name">
+                        <span ><b>addFeddback</b></span>
+                        <a href="#addFeddback"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addFeddback()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/components/customer/feedback/feedback.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/components/customer/feedback/feedback.component.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="customer"></a>
+                    <span class="name">
+                        <span ><b>customer</b></span>
+                        <a href="#customer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Customer.html" target="_self" >Customer</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/customer/feedback/feedback.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="feedback"></a>
+                    <span class="name">
+                        <span ><b>feedback</b></span>
+                        <a href="#feedback"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Feedback.html" target="_self" >Feedback</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/customer/feedback/feedback.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="feedback1"></a>
+                    <span class="name">
+                        <span ><b>feedback1</b></span>
+                        <a href="#feedback1"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Feedback.html" target="_self" >Feedback[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/customer/feedback/feedback.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &quot;@angular/core&quot;;
+import { Router } from &quot;@angular/router&quot;;
+import { ToastrService } from &quot;ngx-toastr&quot;;
+import { Customer } from &quot;src/app/model/customer&quot;;
+import { Feedback } from &quot;src/app/model/feedback&quot;;
+import { CustomerTableService } from &quot;src/app/service/customer-table.service&quot;;
+import { FeedbackService } from &quot;src/app/service/feedback.service&quot;;
+@Component({
+  selector: &quot;app-feedback&quot;,
+  templateUrl: &quot;./feedback.component.html&quot;,
+  styleUrls: [&quot;./feedback.component.css&quot;],
+})
+export class FeedbackComponent implements OnInit {
+  feedback: Feedback;
+  customer: Customer;
+  feedback1: Feedback[];
+  constructor(
+    private toastr: ToastrService,
+    private router: Router,
+    private customerTableService: CustomerTableService
+  ) {
+    this.feedback &#x3D; new Feedback();
+  }
+  ngOnInit() {}
+
+  addFeddback() {
+    this.customer &#x3D; JSON.parse(localStorage.getItem(&quot;customer&quot;));
+    this.toastr.success(&quot;Feedback submitted successfully.&quot;, &quot;Thank you!&quot;);
+    localStorage.removeItem(&quot;role&quot;);
+    localStorage.removeItem(&quot;customer&quot;);
+    localStorage.removeItem(&quot;isRegistered&quot;);
+    this.toastr.success(
+      &quot;You have successfully logged out of the application.&quot;,
+      &quot;Logged Out Successfully!!&quot;
+    );
+
+    this.customer.customerTable.customerTableStatus &#x3D; false;
+    this.customerTableService
+      .updateCustomerTable(this.customer.customerTable)
+      .subscribe((res) &#x3D;&gt; {
+        console.log(res);
+      });
+    this.router.navigate([&quot;/home&quot;]);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!--  Content Wrapper. Contains page content --&gt;
+&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    &lt;div class&#x3D;&quot;content-wrapper&quot; style&#x3D;&quot;min-height: 2168.88px;&quot;&gt;
+        &lt;!-- Content Header (Page header) --&gt;
+        &lt;section class&#x3D;&quot;content-header&quot;&gt;
+            &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+                &lt;div class&#x3D;&quot;row mb-2&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
+                        &lt;h1&gt;Feedback&lt;/h1&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+        &lt;/section&gt;
+        &lt;!-- Main content --&gt;
+        &lt;section class&#x3D;&quot;content&quot;&gt;
+            &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;!-- left column --&gt;
+                    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                        &lt;!-- general form elements --&gt;
+                        &lt;div class&#x3D;&quot;card&quot;&gt;
+                            &lt;div class&#x3D;&quot;card-header&quot;&gt;
+                                &lt;h3 class&#x3D;&quot;card-title&quot;&gt;Feedback Details&lt;/h3&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                                &lt;!-- Minimal style --&gt;
+                                &lt;div class&#x3D;&quot;feedback&quot;&gt;
+                                    &lt;h3 class&#x3D;&quot;text-center&quot;&gt;We value your feedback. &lt;/h3&gt;
+                                    &lt;p class&#x3D;&quot;text-center&quot;&gt;Please complete the following form and help us improve our
+                                        customer experience.
+                                    &lt;/p&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class&#x3D;&quot;row&quot;&gt;
+                                    &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                                        &lt;p&gt;How satisfied are you with our Hygiene?&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+                                        &lt;!-- radio --&gt;
+                                        &lt;div class&#x3D;&quot;form-group clearfix&quot;&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;hygiene1&quot; name&#x3D;&quot;r1&quot; checked&#x3D;&quot;&quot;&gt;
+                                                &lt;label for&#x3D;&quot;hygiene1&quot;&gt;Very Satisfied&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;hygiene2&quot; name&#x3D;&quot;r1&quot;&gt;
+                                                &lt;label for&#x3D;&quot;hygiene2&quot;&gt;Satisfied&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;hygiene3&quot; name&#x3D;&quot;r1&quot;&gt;
+                                                &lt;label for&#x3D;&quot;hygiene3&quot;&gt;
+                                                    Neutral&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;hygiene4&quot; name&#x3D;&quot;r1&quot;&gt;
+                                                &lt;label for&#x3D;&quot;hygiene4&quot;&gt;
+                                                    Unsatisfied&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;hygiene5&quot; name&#x3D;&quot;r1&quot;&gt;
+                                                &lt;label for&#x3D;&quot;hygiene5&quot;&gt;
+                                                    Very Unsatisfied&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;row&quot;&gt;
+                                    &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                                        &lt;p&gt;How satisfied are you with our Ambience?&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+                                        &lt;!-- radio --&gt;
+                                        &lt;div class&#x3D;&quot;form-group clearfix&quot;&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;ambience1&quot; name&#x3D;&quot;r2&quot; checked&#x3D;&quot;&quot;&gt;
+                                                &lt;label for&#x3D;&quot;ambience1&quot;&gt;Very Satisfied&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;ambience2&quot; name&#x3D;&quot;r2&quot;&gt;
+                                                &lt;label for&#x3D;&quot;ambience2&quot;&gt;Satisfied&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;ambience3&quot; name&#x3D;&quot;r2&quot;&gt;
+                                                &lt;label for&#x3D;&quot;ambience3&quot;&gt;
+                                                    Neutral&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;ambience4&quot; name&#x3D;&quot;r2&quot;&gt;
+                                                &lt;label for&#x3D;&quot;ambience4&quot;&gt;
+                                                    Unsatisfied&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;ambience5&quot; name&#x3D;&quot;r2&quot;&gt;
+                                                &lt;label for&#x3D;&quot;ambience5&quot;&gt;
+                                                    Very Unsatisfied&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;row&quot;&gt;
+                                    &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                                        &lt;p&gt;How satisfied are you with our Service?
+                                        &lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+                                        &lt;!-- radio --&gt;
+                                        &lt;div class&#x3D;&quot;form-group clearfix&quot;&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;service1&quot; name&#x3D;&quot;r3&quot; checked&#x3D;&quot;&quot;&gt;
+                                                &lt;label for&#x3D;&quot;service1&quot;&gt;Very Satisfied&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;service2&quot; name&#x3D;&quot;r3&quot;&gt;
+                                                &lt;label for&#x3D;&quot;service2&quot;&gt;Satisfied&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;service3&quot; name&#x3D;&quot;r3&quot;&gt;
+                                                &lt;label for&#x3D;&quot;service3&quot;&gt;
+                                                    Neutral&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;service4&quot; name&#x3D;&quot;r3&quot;&gt;
+                                                &lt;label for&#x3D;&quot;service4&quot;&gt;
+                                                    Unsatisfied&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class&#x3D;&quot;icheck-primary d-inline&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;service5&quot; name&#x3D;&quot;r3&quot;&gt;
+                                                &lt;label for&#x3D;&quot;service5&quot;&gt;
+                                                    Very Unsatisfied&amp;nbsp;&amp;nbsp;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;row&quot;&gt;
+                                    &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+                                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                                            &lt;label&gt;Please give your valuable feedback&lt;/label&gt;
+                                            &lt;textarea class&#x3D;&quot;form-control&quot; rows&#x3D;&quot;3&quot;
+                                                placeholder&#x3D;&quot;We value your feedback...&quot;&gt;&lt;/textarea&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;row&quot;&gt;
+                                    &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+                                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                                            &lt;h5&gt;Overall Feedback&lt;/h5&gt;
+                                            &lt;span class&#x3D;&quot;rate&quot;&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;star5&quot; name&#x3D;&quot;rate&quot; value&#x3D;&quot;5&quot; /&gt;
+                                                &lt;label for&#x3D;&quot;star5&quot; title&#x3D;&quot;text&quot;&gt;5 stars&lt;/label&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;star4&quot; name&#x3D;&quot;rate&quot; value&#x3D;&quot;4&quot; /&gt;
+                                                &lt;label for&#x3D;&quot;star4&quot; title&#x3D;&quot;text&quot;&gt;4 stars&lt;/label&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;star3&quot; name&#x3D;&quot;rate&quot; value&#x3D;&quot;3&quot; /&gt;
+                                                &lt;label for&#x3D;&quot;star3&quot; title&#x3D;&quot;text&quot;&gt;3 stars&lt;/label&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;star2&quot; name&#x3D;&quot;rate&quot; value&#x3D;&quot;2&quot; /&gt;
+                                                &lt;label for&#x3D;&quot;star2&quot; title&#x3D;&quot;text&quot;&gt;2 stars&lt;/label&gt;
+                                                &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;star1&quot; name&#x3D;&quot;rate&quot; value&#x3D;&quot;1&quot; /&gt;
+                                                &lt;label for&#x3D;&quot;star1&quot; title&#x3D;&quot;text&quot;&gt;1 star&lt;/label&gt;
+                                            &lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;!-- /.card-body --&gt;
+                            &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+                                &lt;button class&#x3D;&quot;btn&quot; (click)&#x3D;&#x27;addFeddback()&#x27;&gt;Submit Feedback&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./feedback.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">button {
+  border-radius: 0.3rem;
+  background-color: #f26f26;
+  margin: 0.7rem 0;
+  color: #fff;
+  font-size: medium;
+}
+
+button:hover {
+  border-radius: 0.3rem;
+  background-color: #de580d;
+  margin: 0.7rem 0;
+  color: #fff;
+  font-size: medium;
+  transition: color 0.15s ease-in, background-color 0.15s ease-in,
+    border-color 0.15s ease-in, box-shadow 0.15s ease-in;
+}
+
+.card-header {
+  background-color: #34383a;
+}
+
+.card-title {
+  font-weight: bold;
+  color: white;
+}
+
+.icheck-primary
+  &gt; input:first-child:checked
+  + input[type&#x3D;&quot;hidden&quot;]
+  + label::before,
+.icheck-primary &gt; input:first-child:checked + label::before {
+  background-color: #f26f26;
+  border-color: #de580d;
+}
+
+.icheck-primary
+  &gt; input:first-child:hover
+  + input[type&#x3D;&quot;hidden&quot;]
+  + label::before,
+.icheck-primary &gt; input:first-child:hover + label::before {
+  border-color: #de580d;
+}
+
+.feedback {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 8rem 2rem 8rem;
+  background-color: #f27f26;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback p {
+  width: 40%;
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) &gt; input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) &gt; label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) &gt; label:before {
+  content: &quot;★ &quot;;
+}
+.rate &gt; input:checked ~ label {
+  color: #f26f26;
+}
+.rate:not(:checked) &gt; label:hover,
+.rate:not(:checked) &gt; label:hover ~ label {
+  color: #de580d;
+}
+.rate &gt; input:checked + label:hover,
+.rate &gt; input:checked + label:hover ~ label,
+.rate &gt; input:checked ~ label:hover,
+.rate &gt; input:checked ~ label:hover ~ label,
+.rate &gt; label:hover ~ input:checked ~ label {
+  color: #de580d;
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!--  Content Wrapper. Contains page content --><div class="wrapper">    <div class="content-wrapper" style="min-height: 2168.88px;">        <!-- Content Header (Page header) -->        <section class="content-header">            <div class="container-fluid">                <div class="row mb-2">                    <div class="col-sm-6">                        <h1>Feedback</h1>                    </div>                </div>            </div><!-- /.container-fluid -->        </section>        <!-- Main content -->        <section class="content">            <div class="container-fluid">                <div class="row">                    <!-- left column -->                    <div class="col-md-12">                        <!-- general form elements -->                        <div class="card">                            <div class="card-header">                                <h3 class="card-title">Feedback Details</h3>                            </div>                            <div class="card-body">                                <!-- Minimal style -->                                <div class="feedback">                                    <h3 class="text-center">We value your feedback. </h3>                                    <p class="text-center">Please complete the following form and help us improve our                                        customer experience.                                    </p>                                </div>                                <div class="row">                                    <div class="col-sm-3">                                        <p>How satisfied are you with our Hygiene?</p>                                    </div>                                    <div class="col-sm-9">                                        <!-- radio -->                                        <div class="form-group clearfix">                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="hygiene1" name="r1" checked="">                                                <label for="hygiene1">Very Satisfied&nbsp;&nbsp;                                                </label>                                            </div>                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="hygiene2" name="r1">                                                <label for="hygiene2">Satisfied&nbsp;&nbsp;                                                </label>                                            </div>                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="hygiene3" name="r1">                                                <label for="hygiene3">                                                    Neutral&nbsp;&nbsp;                                                </label>                                            </div>                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="hygiene4" name="r1">                                                <label for="hygiene4">                                                    Unsatisfied&nbsp;&nbsp;                                                </label>                                            </div>                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="hygiene5" name="r1">                                                <label for="hygiene5">                                                    Very Unsatisfied&nbsp;&nbsp;                                                </label>                                            </div>                                        </div>                                    </div>                                </div>                                <div class="row">                                    <div class="col-sm-3">                                        <p>How satisfied are you with our Ambience?</p>                                    </div>                                    <div class="col-sm-9">                                        <!-- radio -->                                        <div class="form-group clearfix">                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="ambience1" name="r2" checked="">                                                <label for="ambience1">Very Satisfied&nbsp;&nbsp;                                                </label>                                            </div>                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="ambience2" name="r2">                                                <label for="ambience2">Satisfied&nbsp;&nbsp;                                                </label>                                            </div>                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="ambience3" name="r2">                                                <label for="ambience3">                                                    Neutral&nbsp;&nbsp;                                                </label>                                            </div>                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="ambience4" name="r2">                                                <label for="ambience4">                                                    Unsatisfied&nbsp;&nbsp;                                                </label>                                            </div>                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="ambience5" name="r2">                                                <label for="ambience5">                                                    Very Unsatisfied&nbsp;&nbsp;                                                </label>                                            </div>                                        </div>                                    </div>                                </div>                                <div class="row">                                    <div class="col-sm-3">                                        <p>How satisfied are you with our Service?                                        </p>                                    </div>                                    <div class="col-sm-9">                                        <!-- radio -->                                        <div class="form-group clearfix">                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="service1" name="r3" checked="">                                                <label for="service1">Very Satisfied&nbsp;&nbsp;                                                </label>                                            </div>                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="service2" name="r3">                                                <label for="service2">Satisfied&nbsp;&nbsp;                                                </label>                                            </div>                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="service3" name="r3">                                                <label for="service3">                                                    Neutral&nbsp;&nbsp;                                                </label>                                            </div>                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="service4" name="r3">                                                <label for="service4">                                                    Unsatisfied&nbsp;&nbsp;                                                </label>                                            </div>                                            <div class="icheck-primary d-inline">                                                <input type="radio" id="service5" name="r3">                                                <label for="service5">                                                    Very Unsatisfied&nbsp;&nbsp;                                                </label>                                            </div>                                        </div>                                    </div>                                </div>                                <div class="row">                                    <div class="col-sm-9">                                        <div class="form-group">                                            <label>Please give your valuable feedback</label>                                            <textarea class="form-control" rows="3"                                                placeholder="We value your feedback..."></textarea>                                        </div>                                    </div>                                </div>                                <div class="row">                                    <div class="col-sm-9">                                        <div class="form-group">                                            <h5>Overall Feedback</h5>                                            <span class="rate">                                                <input type="radio" id="star5" name="rate" value="5" />                                                <label for="star5" title="text">5 stars</label>                                                <input type="radio" id="star4" name="rate" value="4" />                                                <label for="star4" title="text">4 stars</label>                                                <input type="radio" id="star3" name="rate" value="3" />                                                <label for="star3" title="text">3 stars</label>                                                <input type="radio" id="star2" name="rate" value="2" />                                                <label for="star2" title="text">2 stars</label>                                                <input type="radio" id="star1" name="rate" value="1" />                                                <label for="star1" title="text">1 star</label>                                            </span>                                        </div>                                    </div>                                </div>                            </div>                            <!-- /.card-body -->                            <div class="card-footer">                                <button class="btn" (click)=\'addFeddback()\'>Submit Feedback</button>                            </div>                        </div>                    </div>                </div>            </div>        </section>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AcceptedOrdersComponent', 'selector': 'app-accepted-orders'},{'name': 'AddChefComponent', 'selector': 'app-add-chef'},{'name': 'AddFoodCategoryComponent', 'selector': 'app-add-food-category'},{'name': 'AddFoodComponent', 'selector': 'app-add-food'},{'name': 'AddSupervisorComponent', 'selector': 'app-add-supervisor'},{'name': 'AdminDashboardComponent', 'selector': 'app-admin-dashboard'},{'name': 'AdminSidebarComponent', 'selector': 'app-admin-sidebar'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BillComponent', 'selector': 'app-bill'},{'name': 'ChefDashboardComponent', 'selector': 'app-chef-dashboard'},{'name': 'ChefSidebarComponent', 'selector': 'app-chef-sidebar'},{'name': 'CustomerHelpsComponent', 'selector': 'app-customer-helps'},{'name': 'CustomerRegisterComponent', 'selector': 'app-customer-register'},{'name': 'CustomerSidebarComponent', 'selector': 'app-customer-sidebar'},{'name': 'FeedbackComponent', 'selector': 'app-feedback'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageChefComponent', 'selector': 'app-manage-chef'},{'name': 'ManageFoodCategoryComponent', 'selector': 'app-manage-food-category'},{'name': 'ManageFoodComponent', 'selector': 'app-manage-food'},{'name': 'ManageSupervisorComponent', 'selector': 'app-manage-supervisor'},{'name': 'OrderCancellationRequestComponent', 'selector': 'app-order-cancellation-request'},{'name': 'PaymentComponent', 'selector': 'app-payment'},{'name': 'PendingBillsComponent', 'selector': 'app-pending-bills'},{'name': 'RevfoodsComponent', 'selector': 'app-revfoods'},{'name': 'ServedOrdersComponent', 'selector': 'app-served-orders'},{'name': 'SubHomeComponent', 'selector': 'app-sub-home'},{'name': 'SupervisorDashboardComponent', 'selector': 'app-supervisor-dashboard'},{'name': 'SupervisorSidebarComponent', 'selector': 'app-supervisor-sidebar'},{'name': 'UpdateChefComponent', 'selector': 'app-update-chef'},{'name': 'UpdateFoodCategoryComponent', 'selector': 'app-update-food-category'},{'name': 'UpdateFoodComponent', 'selector': 'app-update-food'},{'name': 'UpdateSupervisorComponent', 'selector': 'app-update-supervisor'},{'name': 'ViewCartComponent', 'selector': 'app-view-cart'},{'name': 'ViewCustomerOrdersComponent', 'selector': 'app-view-customer-orders'},{'name': 'ViewFoodCategoryComponent', 'selector': 'app-view-food-category'},{'name': 'ViewOrdersComponent', 'selector': 'app-view-orders'},{'name': 'ViewUnoccupiedTablesComponent', 'selector': 'app-view-unoccupied-tables'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'FeedbackComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'FeedbackComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,1 +1,39 @@
-<p>view-food-category works!</p>
+<div class="wrapper">
+    <div class="content-wrapper">
+        <section class="content">
+            <div class="container-fluid">
+                <h2 class="rev-title">Inspiration for your first order</h2>
+                <div class="div-grid">
+                    <div *ngFor="let food of foodList">
+                        <div class="card">
+                            <img class="card-img-top" [src]="food.foodAvatar" [alt]="food.foodName">
+                            <div class="card-body">
+                                <h5 class="card-title">{{food.foodName}}</h5>
+                                <h6 class="card-text" id="card-price">₹ {{food.foodPrice}}</h6>
+                                <h1 class="card-text">{{food.foodCategory.foodCategoryName}}</h1>
+                                <h1 class="card-text">{{food.foodPrepTime}} mins.</h1>
+                            </div>
+                            <div class="card-footer">
+                                <div *ngIf="food.foodQuantity > 0">
+                                    <span style="margin-bottom:0.5rem;">
+                                        <button class="btn" (click)="dec(food)"><i
+                                                class="fas fa-minus-circle"></i></button>
+                                        {{food.foodQuantity}}
+                                        <button class="btn" (click)="inc(food)"><i
+                                                class="fas fa-plus-circle"></i></button>
+                                    </span>
+                                    <button type="button" class="btn btn-block" (click)="addFoodToCart(food)"><i
+                                            class="fas fa-plus-circle"></i>&nbsp;&nbsp;Add To Cart</button>
+                                </div>
+                                <div *ngIf="food.foodQuantity == 0">
+                                    <button type="button" class="btn btn-block" (click)="addToCart(food)"><i
+                                            class="fas fa-plus-circle"></i>&nbsp;&nbsp;Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

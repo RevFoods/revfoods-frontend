@@ -1,0 +1,675 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>revfoods-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">revfoods-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  PendingBillsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/supervisor/pending-bills/pending-bills.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-pending-bills</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./pending-bills.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./pending-bills.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#customerList" >customerList</a>
+                            </li>
+                            <li>
+                                <a href="#foodOrderList" >foodOrderList</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#paid" >paid</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(foodOrderService: <a href="../injectables/FoodOrderService.html" target="_self">FoodOrderService</a>, customerService: <a href="../injectables/CustomerService.html" target="_self">CustomerService</a>, toaster: ToastrService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/supervisor/pending-bills/pending-bills.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>foodOrderService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FoodOrderService.html" target="_self" >FoodOrderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>customerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CustomerService.html" target="_self" >CustomerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toaster</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastrService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/components/supervisor/pending-bills/pending-bills.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paid"></a>
+                    <span class="name">
+                        <span ><b>paid</b></span>
+                        <a href="#paid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>paid(customerId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/components/supervisor/pending-bills/pending-bills.component.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>customerId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="customerList"></a>
+                    <span class="name">
+                        <span ><b>customerList</b></span>
+                        <a href="#customerList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Customer.html" target="_self" >Customer[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/supervisor/pending-bills/pending-bills.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="foodOrderList"></a>
+                    <span class="name">
+                        <span ><b>foodOrderList</b></span>
+                        <a href="#foodOrderList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>FoodOrder[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/supervisor/pending-bills/pending-bills.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &quot;@angular/core&quot;;
+import { ToastrService } from &quot;ngx-toastr&quot;;
+import { Customer } from &quot;src/app/model/customer&quot;;
+import { FoodOrder } from &quot;src/app/model/food-order&quot;;
+import { OrderStatus } from &quot;src/app/model/order-status&quot;;
+import { CustomerService } from &quot;src/app/service/customer.service&quot;;
+import { FoodOrderService } from &quot;src/app/service/food-order.service&quot;;
+import { OrderStatusService } from &quot;src/app/service/order-status.service&quot;;
+@Component({
+  selector: &quot;app-pending-bills&quot;,
+  templateUrl: &quot;./pending-bills.component.html&quot;,
+  styleUrls: [&quot;./pending-bills.component.css&quot;],
+})
+export class PendingBillsComponent implements OnInit {
+  foodOrderList: FoodOrder[];
+  customerList: Customer[];
+  constructor(
+    private foodOrderService: FoodOrderService,
+    private customerService: CustomerService,
+    private toaster: ToastrService
+  ) {}
+  ngOnInit() {
+    this.customerService.getAllCustomersByOrderStatusId(7).subscribe((res) &#x3D;&gt; {
+      console.log(res);
+      this.customerList &#x3D; res;
+    });
+  }
+
+  paid(customerId: number) {
+    this.foodOrderService
+      .getFoodOrdersByCustomerId(customerId)
+      .subscribe((res) &#x3D;&gt; {
+        console.log(res);
+        for (let foodOrder of res) {
+          this.foodOrderService
+            .updateFoodOrderStatus(foodOrder.foodOrderId, 8)
+            .subscribe((data) &#x3D;&gt; {
+              console.log(data);
+              this.toaster.success(
+                foodOrder.cart.customer.customerName + &quot; paid successfully.&quot;,
+                &quot;Order Paid Successfully!!&quot;
+              );
+            });
+        }
+      });
+    this.ngOnInit();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    &lt;!-- Content Wrapper. Contains page content --&gt;
+    &lt;div class&#x3D;&quot;content-wrapper&quot; style&#x3D;&quot;min-height: 2077.69px;&quot;&gt;
+        &lt;!-- Content Header (Page header) --&gt;
+        &lt;section class&#x3D;&quot;content-header&quot;&gt;
+            &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+                &lt;div class&#x3D;&quot;row mb-2&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-sm-12&quot;&gt;
+                        &lt;h1&gt;Served Orders&lt;/h1&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+        &lt;/section&gt;
+
+        &lt;!-- Main content --&gt;
+        &lt;section class&#x3D;&quot;content&quot;&gt;
+            &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+                        &lt;div class&#x3D;&quot;card&quot;&gt;
+
+                            &lt;!-- /.card-header --&gt;
+                            &lt;div class&#x3D;&quot;card-header&quot;&gt;
+                                &lt;h3 class&#x3D;&quot;card-title&quot;&gt;Served Order Details&lt;/h3&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                                &lt;table class&#x3D;&quot;table table-bordered table-hover&quot;&gt;
+                                    &lt;thead class&#x3D;&quot;thead-light&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;th class&#x3D;&quot;text-center&quot;&gt;ID&lt;/th&gt;
+                                            &lt;th class&#x3D;&quot;text-center&quot;&gt;Name&lt;/th&gt;
+                                            &lt;th class&#x3D;&quot;text-center&quot;&gt;Table&lt;/th&gt;
+                                            &lt;th class&#x3D;&quot;text-center&quot;&gt;Status&lt;/th&gt;
+                                            &lt;th class&#x3D;&quot;text-center&quot;&gt;Action&lt;/th&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/thead&gt;
+                                    &lt;tbody&gt;
+                                        &lt;tr *ngFor&#x3D;&quot;let customer of customerList&quot; data-widget&#x3D;&quot;expandable-table&quot;
+                                            aria-expanded&#x3D;&quot;true&quot;&gt;
+                                            &lt;td class&#x3D;&quot;text-center&quot;&gt;{{customer.customerId}}&lt;/td&gt;
+                                            &lt;td class&#x3D;&quot;text-center&quot;&gt;{{customer.customerName}}&lt;/td&gt;
+                                            &lt;td class&#x3D;&quot;text-center&quot;&gt;{{customer.customerTable.customerTableNumber}}&lt;/td&gt;
+                                            &lt;td class&#x3D;&quot;text-center&quot;&gt;&lt;span class&#x3D;&quot;badge bg-danger&quot;&gt;Unpaid&lt;/span&gt;&lt;/td&gt;
+                                            &lt;td class&#x3D;&quot;text-center&quot;&gt;
+                                                &lt;button (click)&#x3D;&quot;paid(customer.customerId)&quot; type&#x3D;&quot;button&quot; class&#x3D;&quot;btn&quot;&gt;&lt;i
+                                                        class&#x3D;&quot;fas fa-credit-card&quot;&gt;&lt;/i&gt;&amp;nbsp;
+                                                    &amp;nbsp;Paid
+                                                &lt;/button&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/tbody&gt;
+                                &lt;/table&gt;
+                            &lt;/div&gt;
+                            &lt;!-- /.card-body --&gt;
+
+                        &lt;/div&gt;
+                        &lt;!-- /.card --&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- /.content-wrapper --&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./pending-bills.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">button {
+  border-radius: 0.3rem;
+  background-color: #f26f26;
+  margin: 0.7rem 0;
+  color: #fff;
+  font-size: medium;
+}
+
+button:hover {
+  border-radius: 0.3rem;
+  background-color: #de580d;
+  margin: 0.7rem 0;
+  color: #fff;
+  font-size: medium;
+  transition: color 0.15s ease-in, background-color 0.15s ease-in,
+    border-color 0.15s ease-in, box-shadow 0.15s ease-in;
+}
+
+.card-header {
+  background-color: #263238;
+}
+
+.card-title {
+  font-weight: bold;
+  color: white;
+}
+
+.badge {
+  padding: 0.5rem 1rem;
+  font-size: medium;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="wrapper">    <!-- Content Wrapper. Contains page content -->    <div class="content-wrapper" style="min-height: 2077.69px;">        <!-- Content Header (Page header) -->        <section class="content-header">            <div class="container-fluid">                <div class="row mb-2">                    <div class="col-sm-12">                        <h1>Served Orders</h1>                    </div>                </div>            </div><!-- /.container-fluid -->        </section>        <!-- Main content -->        <section class="content">            <div class="container-fluid">                <div class="row">                    <div class="col-md-12">                        <div class="card">                            <!-- /.card-header -->                            <div class="card-header">                                <h3 class="card-title">Served Order Details</h3>                            </div>                            <div class="card-body">                                <table class="table table-bordered table-hover">                                    <thead class="thead-light">                                        <tr>                                            <th class="text-center">ID</th>                                            <th class="text-center">Name</th>                                            <th class="text-center">Table</th>                                            <th class="text-center">Status</th>                                            <th class="text-center">Action</th>                                        </tr>                                    </thead>                                    <tbody>                                        <tr *ngFor="let customer of customerList" data-widget="expandable-table"                                            aria-expanded="true">                                            <td class="text-center">{{customer.customerId}}</td>                                            <td class="text-center">{{customer.customerName}}</td>                                            <td class="text-center">{{customer.customerTable.customerTableNumber}}</td>                                            <td class="text-center"><span class="badge bg-danger">Unpaid</span></td>                                            <td class="text-center">                                                <button (click)="paid(customer.customerId)" type="button" class="btn"><i                                                        class="fas fa-credit-card"></i>&nbsp;                                                    &nbsp;Paid                                                </button>                                            </td>                                        </tr>                                    </tbody>                                </table>                            </div>                            <!-- /.card-body -->                        </div>                        <!-- /.card -->                    </div>                </div>            </div>            <!-- /.content-wrapper -->        </section>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AcceptedOrdersComponent', 'selector': 'app-accepted-orders'},{'name': 'AddChefComponent', 'selector': 'app-add-chef'},{'name': 'AddFoodCategoryComponent', 'selector': 'app-add-food-category'},{'name': 'AddFoodComponent', 'selector': 'app-add-food'},{'name': 'AddSupervisorComponent', 'selector': 'app-add-supervisor'},{'name': 'AdminDashboardComponent', 'selector': 'app-admin-dashboard'},{'name': 'AdminSidebarComponent', 'selector': 'app-admin-sidebar'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BillComponent', 'selector': 'app-bill'},{'name': 'ChefDashboardComponent', 'selector': 'app-chef-dashboard'},{'name': 'ChefSidebarComponent', 'selector': 'app-chef-sidebar'},{'name': 'CustomerHelpsComponent', 'selector': 'app-customer-helps'},{'name': 'CustomerRegisterComponent', 'selector': 'app-customer-register'},{'name': 'CustomerSidebarComponent', 'selector': 'app-customer-sidebar'},{'name': 'FeedbackComponent', 'selector': 'app-feedback'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageChefComponent', 'selector': 'app-manage-chef'},{'name': 'ManageFoodCategoryComponent', 'selector': 'app-manage-food-category'},{'name': 'ManageFoodComponent', 'selector': 'app-manage-food'},{'name': 'ManageSupervisorComponent', 'selector': 'app-manage-supervisor'},{'name': 'OrderCancellationRequestComponent', 'selector': 'app-order-cancellation-request'},{'name': 'PaymentComponent', 'selector': 'app-payment'},{'name': 'PendingBillsComponent', 'selector': 'app-pending-bills'},{'name': 'RevfoodsComponent', 'selector': 'app-revfoods'},{'name': 'ServedOrdersComponent', 'selector': 'app-served-orders'},{'name': 'SubHomeComponent', 'selector': 'app-sub-home'},{'name': 'SupervisorDashboardComponent', 'selector': 'app-supervisor-dashboard'},{'name': 'SupervisorSidebarComponent', 'selector': 'app-supervisor-sidebar'},{'name': 'UpdateChefComponent', 'selector': 'app-update-chef'},{'name': 'UpdateFoodCategoryComponent', 'selector': 'app-update-food-category'},{'name': 'UpdateFoodComponent', 'selector': 'app-update-food'},{'name': 'UpdateSupervisorComponent', 'selector': 'app-update-supervisor'},{'name': 'ViewCartComponent', 'selector': 'app-view-cart'},{'name': 'ViewCustomerOrdersComponent', 'selector': 'app-view-customer-orders'},{'name': 'ViewFoodCategoryComponent', 'selector': 'app-view-food-category'},{'name': 'ViewOrdersComponent', 'selector': 'app-view-orders'},{'name': 'ViewUnoccupiedTablesComponent', 'selector': 'app-view-unoccupied-tables'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'PendingBillsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PendingBillsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
